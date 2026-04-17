@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Marodia | Portfolio</title>
-    <meta name="description" content="Portfolio of Harsh Marodia, an Aspiring Software Developer specializing in Web Development, Flutter, and Backend Systems.">
+    <title>Harsh Marodia | Software Developer</title>
+    <meta name="description" content="Portfolio of Harsh Marodia, Software Developer specializing in Web Development, Flutter, and Backend Systems.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,22 +17,16 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <!-- Background Animation Elements -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">HM<span>.</span></a>
+            <a href="#home" class="logo">Harsh Marodia</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact" class="btn-nav">Contact</a></li>
+                <li><a href="#contact" class="btn-nav">Contact me</a></li>
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -40,330 +34,205 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content reveal-up">
-            <p class="greeting">Hello, I'm</p>
-            <h1 class="name">Harsh Marodia</h1>
-            <h2 class="title"><span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
-            <p class="summary">
-                BCA GLS'26 | Aspiring Software Developer with strong foundations in C++, Data Structures & Algorithms, and full-stack web development. Focused on solving real-world problems through efficient system design.
-            </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Let's Connect</a>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/Harshmarodia" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/harsh-marodia-51506a228" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:harshmarodia1207@gmail.com"><i class="fas fa-envelope"></i></a>
+    <!-- Header Section -->
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="reveal-up">
+                <span class="badge">Open to new opportunities</span>
+                <h1 class="name">Building robust solutions<br>through clean code.</h1>
+                <p class="summary">
+                    I am an aspiring Software Developer based in Ahmedabad. With a strong foundation in C++ and full-stack web development, I focus on engineering scalable, performant systems and intuitive user interfaces.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                    <a href="https://github.com/Harshmarodia" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/harsh-marodia-51506a228" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- About & Education Section -->
-    <section id="about" class="about-section pt-100">
+    <!-- Experience Section (Moved up for professional priority) -->
+    <section id="experience" class="section bg-alt pt-100">
         <div class="container reveal-up">
             <div class="section-title">
-                <h2>About <span>Me</span></h2>
+                <h2>Professional Experience</h2>
                 <div class="line"></div>
             </div>
-            
-            <div class="about-grid">
-                <div class="about-text glass-card">
-                    <p>
-                        I am an aspiring software engineering student currently pursuing a Bachelor of Computer Application (BCA) at Gujarat Law Society, Ahmedabad. 
-                        My journey involves building scalable web applications using modern technologies like Flutter (Web), Node.js, and MongoDB.
-                    </p>
-                    <p>
-                        I have a strong inclination toward problem-solving, exploring advanced data structures, and applying practical implementations to complex business needs.
-                    </p>
-                    <div class="quick-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Ahmedabad, India</span>
+            <div class="timeline-container">
+                <div class="card experience-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="role">Search Engine Optimization</h3>
+                            <span class="company">Miskon International  •  Ahmedabad</span>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>BCA GLS'26</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-language"></i>
-                            <span>English, Hindi</span>
-                        </div>
+                        <span class="date-badge">04/2024 — 06/2024</span>
                     </div>
-                </div>
-
-                <div class="education glass-card">
-                    <h3><i class="fas fa-book-open"></i> Education</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Bachelor Of Computer Application (BCA)</h4>
-                                <h5>Gujarat Law Society, Ahmedabad</h5>
-                                <span class="date">06/2023 - 04/2026</span>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Senior Secondary Education</h4>
-                                <h5>Cambridge Public School, Raxaul</h5>
-                                <span class="date">04/2021 - 04/2023</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="experience" class="experience-section pt-100">
-        <div class="container reveal-up">
-            <div class="section-title">
-                <h2>Work <span>Experience</span></h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="timeline-large">
-                <div class="timeline-item glass-card reveal-up">
-                    <div class="timeline-dot-large"></div>
-                    <div class="timeline-content-large">
-                        <div class="job-header">
-                            <h3>Search Engine Optimization</h3>
-                            <span class="company">Miskon International | Ahmedabad</span>
-                            <span class="job-date">04/2024 - 06/2024</span>
-                        </div>
-                        <ul class="job-details">
-                            <li>Implemented on-page SEO strategies including keyword optimization and meta-tag improvements.</li>
-                            <li>Conducted keyword research focusing on short-tail and high-traffic queries.</li>
-                            <li>Improved website visibility and contributed to a <span class="highlight">15% increase in organic traffic</span>.</li>
-                            <li>Assisted in optimizing website structure and performance.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section pt-100">
-        <div class="container">
-            <div class="section-title reveal-up">
-                <h2>My <span>Projects</span></h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <i class="fas fa-car-side project-icon"></i>
-                            <div class="project-links">
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <h3>On-Demand Vehicle Service & AI WebApp</h3>
-                        <span class="project-date">05/2025 - 04/2026</span>
-                        <p>Built a full-stack App for emergency breakdown assistance. Features real-time requests, user management, and AI interactions.</p>
-                        <ul class="tech-stack">
-                            <li>Flutter Web</li>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <i class="fas fa-book project-icon"></i>
-                        </div>
-                        <h3>Library Management System</h3>
-                        <span class="project-date">06/2025 - 10/2025</span>
-                        <p>Developed a web-based system for issue/return operations, record tracking, and multi-tier user management.</p>
-                        <ul class="tech-stack">
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <i class="fas fa-shopping-cart project-icon"></i>
-                        </div>
-                        <h3>e-Commerce Webpage</h3>
-                        <span class="project-date">04/2024 - 05/2024</span>
-                        <p>Designed a custom Shopify eCommerce layout. Enhanced navigation flows and product pages for better UX and visibility.</p>
-                        <ul class="tech-stack">
-                            <li>Shopify</li>
-                            <li>UI/UX</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <i class="fas fa-gamepad project-icon"></i>
-                        </div>
-                        <h3>Tic Tac Toe Game</h3>
-                        <span class="project-date">06/2025</span>
-                        <p>Interactive game logic with two-player mode, real-time moves, win detection algorithms, and draw handling.</p>
-                        <ul class="tech-stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <i class="fas fa-coffee project-icon"></i>
-                        </div>
-                        <h3>Coffee Blog</h3>
-                        <span class="project-date">05/2024 - 07/2024</span>
-                        <p>A WordPress/WooCommerce based blog detailing coffee styles, beans, and recipes.</p>
-                        <ul class="tech-stack">
-                            <li>WordPress</li>
-                            <li>WooCommerce</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <i class="fas fa-blog project-icon"></i>
-                        </div>
-                        <h3>Personal Blog</h3>
-                        <span class="project-date">07/2023 - 10/2023</span>
-                        <p>A responsive multi-page blog demonstrating semantic layout structuring and mobile-first approach.</p>
-                        <ul class="tech-stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills & Certificates Section -->
-    <section id="skills" class="skills-section pt-100">
-        <div class="container">
-            <div class="section-title reveal-up">
-                <h2>Skills & <span>Certifications</span></h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="skills-cert-grid">
-                <!-- Skills -->
-                <div class="skills-container glass-card reveal-up">
-                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">JAVA</span>
-                        <span class="skill-tag">Data Structures & Algorithms</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Web Development</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">SEO</span>
-                    </div>
-
-                    <h3 class="mt-4"><i class="fas fa-heart"></i> Interests</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag secondary-tag"><i class="fas fa-chess-knight"></i> Chess</span>
-                        <span class="skill-tag secondary-tag"><i class="fas fa-table-tennis"></i> Badminton</span>
-                    </div>
-                </div>
-
-                <!-- Certificates -->
-                <div class="certificates-container glass-card reveal-up">
-                    <h3><i class="fas fa-certificate"></i> Certifications & Exp</h3>
-                    <ul class="cert-list">
-                        <li>
-                            <div class="cert-info">
-                                <h4>Flutter (Dart)</h4>
-                                <span>12/2025 - 04/2026</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cert-info">
-                                <h4>C++ / DSA Course</h4>
-                                <span>08/2024 - 11/2024</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cert-info">
-                                <h4>SEO Course</h4>
-                                <span>07/2023 - 10/2023</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cert-info">
-                                <h4>Volunteering – Cyber Shadez</h4>
-                                <span>12/2023 - 01/2024</span>
-                            </div>
-                        </li>
+                    <ul class="duties">
+                        <li>Directed on-page SEO strategies, focusing on technical meta-tag improvements and structural enhancements.</li>
+                        <li>Conducted extensive keyword research mapping short-tail and high-traffic search queries.</li>
+                        <li>Optimized internal website architecture, substantially improving core web vitals and overall visibility.</li>
+                        <li><strong class="highlight">Impact:</strong> Actively contributed to a 15% measured increase in organic web traffic over a single quarter.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section pt-100">
-        <div class="container reveal-up">
-            <div class="contact-box glass-card">
-                <h2>Get In Touch</h2>
-                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                <div class="contact-details">
-                    <a href="mailto:harshmarodia1207@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i> harshmarodia1207@gmail.com
-                    </a>
-                    <a href="tel:+917461900381" class="contact-item">
-                        <i class="fas fa-phone"></i> +91 7461900381
-                    </a>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i> Ahmedabad, India
+    <!-- Projects Portfolio Section -->
+    <section id="projects" class="section pt-100">
+        <div class="container">
+            <div class="section-title reveal-up">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="grid projects-grid">
+                <!-- Project 1 -->
+                <div class="card project-card reveal-up">
+                    <div class="project-header">
+                        <i class="fas fa-layer-group text-accent"></i>
+                        <span class="date-text">05/2025 – 04/2026</span>
+                    </div>
+                    <h3>AI-Enabled Breakdown Assistance</h3>
+                    <p class="desc">A full-stack, real-time application allowing users to book emergency vehicle breakdown services. Built a scalable backend API infrastructure and responsive UI to streamline dispatch sequences.</p>
+                    <div class="tech-stack">
+                        <span>Flutter Web</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
                     </div>
                 </div>
-                <a href="mailto:harshmarodia1207@gmail.com" class="btn btn-primary mt-4">Say Hello</a>
+
+                <!-- Project 2 -->
+                <div class="card project-card reveal-up">
+                    <div class="project-header">
+                        <i class="fas fa-database text-accent"></i>
+                        <span class="date-text">06/2025 – 10/2025</span>
+                    </div>
+                    <h3>Library Management System</h3>
+                    <p class="desc">Engineered a relational database-backed management system. Designed a normalized schema handling high-volume I/O for book issuance, returns, and multi-user authentication mechanisms.</p>
+                    <div class="tech-stack">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card reveal-up">
+                    <div class="project-header">
+                        <i class="fas fa-shopping-bag text-accent"></i>
+                        <span class="date-text">04/2024 – 05/2024</span>
+                    </div>
+                    <h3>E-Commerce Interface Architecture</h3>
+                    <p class="desc">Custom-designed a robust Shopify layout structuring product data flows effectively. Focused on rigorous accessibility UX practices and conversion-optimized routing.</p>
+                    <div class="tech-stack">
+                        <span>Shopify Platform</span>
+                        <span>UX Design</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card project-card reveal-up">
+                    <div class="project-header">
+                        <i class="fas fa-gamepad text-accent"></i>
+                        <span class="date-text">06/2025</span>
+                    </div>
+                    <h3>Interactive Tic Tac Toe</h3>
+                    <p class="desc">Developed pure vanilla matrix state logic handling two-player state tracking, win-detection algorithms, and deterministic draw scenarios.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>DOM Manipulation</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="social-links footer-socials">
-                <a href="https://github.com/Harshmarodia" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/harsh-marodia-51506a228" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Core Skills & Knowledge -->
+    <section id="skills" class="section bg-alt pt-100">
+        <div class="container reveal-up">
+            <div class="grid skills-grid">
+                
+                <div class="card">
+                    <h3 class="mb-2"><i class="fas fa-microchip"></i> Core Competencies</h3>
+                    <p class="desc mb-2">Technical expertise gained through academic study and hands-on application.</p>
+                    <div class="tag-cloud">
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Data Structures & Algorithms</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="mb-2"><i class="fas fa-award"></i> Education & Certifications</h3>
+                    <ul class="list-clean">
+                        <li>
+                            <strong class="text-white">BCA, Gujarat Law Society</strong>
+                            <div class="text-muted text-sm">Graduation: April 2026 • Ahmedabad</div>
+                        </li>
+                        <li>
+                            <strong class="text-white">Senior Secondary</strong>
+                            <div class="text-muted text-sm">Cambridge Public School • April 2023</div>
+                        </li>
+                    </ul>
+                    <hr class="divider">
+                    <ul class="list-clean">
+                        <li><span class="text-white">Applied Flutter & Dart</span> <span class="text-muted text-sm float-right">2025/2026</span></li>
+                        <li><span class="text-white">C++ / Data Structures Masterclass</span> <span class="text-muted text-sm float-right">2024</span></li>
+                        <li><span class="text-white">Cyber Shadez (Technical Volunteer)</span> <span class="text-muted text-sm float-right">2024</span></li>
+                    </ul>
+                </div>
+
             </div>
-            <p>&copy; 2026 Harsh Marodia. Designed & Built with ❤️</p>
+        </div>
+    </section>
+
+    <!-- Additional About Section -->
+    <section id="about" class="section pt-100">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <p>I am highly analytical and driven by a curiosity to understand how complex systems operate under the hood. As an undergraduate student (BCA GLS'26), my focus remains on building technically sound software.</p>
+                <p>When I'm not writing code or analyzing data structures, you will likely find me engaged in tactical gameplay on the <strong class="text-white">Chess</strong> board, or staying active playing <strong class="text-white">Badminton</strong>.</p>
+                <p>Fluency: English & Hindi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="section pb-0">
+        <div class="container reveal-up">
+            <div class="contact-banner card text-center">
+                <h2>Ready to build together?</h2>
+                <p class="desc text-center mx-auto" style="max-width: 600px;">I am actively seeking software engineering internships or roles where I can contribute to mission-critical codebases and scale application environments.</p>
+                <div class="contact-links mt-3">
+                    <a href="mailto:harshmarodia1207@gmail.com" class="link-item"><i class="fas fa-envelope"></i> harshmarodia1207@gmail.com</a>
+                    <span class="link-separator">•</span>
+                    <a href="tel:+917461900381" class="link-item"><i class="fas fa-phone"></i> +91 7461900381</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container flex-footer">
+            <div class="footer-links">
+                <a href="https://github.com/Harshmarodia" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/harsh-marodia-51506a228" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+            <p class="text-muted text-sm">&copy; 2026 Harsh Marodia. All Rights Reserved.</p>
         </div>
     </footer>
 

@@ -30,56 +30,12 @@ const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
     } else {
-        navbar.classList.remove('scrolled');
+        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        navbar.style.boxShadow = 'none';
     }
-});
-
-// Typing Effect
-const typedTextSpan = document.querySelector(".typing-text");
-const cursorSpan = document.querySelector(".cursor");
-
-const textArray = [
-    "Aspiring Software Developer", 
-    "Web Developer", 
-    "Flutter Enthusiast", 
-    "Problem Solver"
-];
-const typingDelay = 100;
-const erasingDelay = 50;
-const newTextDelay = 2000;
-let textArrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-    if (charIndex < textArray[textArrayIndex].length) {
-        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
-    } else {
-        cursorSpan.classList.remove("typing");
-        setTimeout(erase, newTextDelay);
-    }
-}
-
-function erase() {
-    if (charIndex > 0) {
-        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-    } else {
-        cursorSpan.classList.remove("typing");
-        textArrayIndex++;
-        if(textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 1100);
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 // Scroll Reveal Animation (Intersection Observer)
@@ -89,7 +45,7 @@ const revealCallback = function(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            observer.unobserve(entry.target); // Optional: stops observing once revealed
+            observer.unobserve(entry.target);
         }
     });
 };
