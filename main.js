@@ -32,8 +32,11 @@ if (cursorDot && cursorOutline) {
     });
 }
 
-// Navbar Scroll Effect
+// Navbar Scroll Effect & Hamburger Logic
 const navbar = document.getElementById('navbar');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
 if (navbar) {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -41,6 +44,25 @@ if (navbar) {
         } else {
             navbar.classList.remove('scrolled');
         }
+    });
+}
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = hamburger.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        });
     });
 }
 
